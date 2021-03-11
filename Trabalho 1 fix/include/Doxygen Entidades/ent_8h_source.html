@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Código-Fonte de ent.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ent.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ent_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ENTIDADES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ENTIDADES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;dominios.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_usuario.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_usuario.html">Usuario</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        Nome        nome;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        Email       email;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        Senha       senha;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        Telefone    telefone;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="comment">//Declaração dos métodos setters e getters</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> setNome(<span class="keyword">const</span> Nome&amp;);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        Nome getNome() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> setEmail(<span class="keyword">const</span> Email&amp;);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        Email getEmail() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> setSenha(<span class="keyword">const</span> Senha&amp;);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        Senha getSenha() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> setTelefone(<span class="keyword">const</span> Telefone&amp;);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Telefone getTelefone() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_usuario.html#a67580c333ab37fda94a3cb7c52121ef2">   70</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a67580c333ab37fda94a3cb7c52121ef2">Usuario::setNome</a>(<span class="keyword">const</span> Nome &amp;nome){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    this-&gt;nome = nome;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_usuario.html#a712640c003aa66605846627f2c90db60">   78</a></span>&#160;<span class="keyword">inline</span> Nome <a class="code" href="class_usuario.html#a712640c003aa66605846627f2c90db60">Usuario::getNome</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> nome;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_usuario.html#a0371bfcd38d47d092a66d1a7efd5a6b5">   87</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a0371bfcd38d47d092a66d1a7efd5a6b5">Usuario::setEmail</a>(<span class="keyword">const</span> Email &amp;email){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    this-&gt;email = email;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_usuario.html#a47a619f688d224dc0c4e926d1db35aa0">   95</a></span>&#160;<span class="keyword">inline</span> Email <a class="code" href="class_usuario.html#a47a619f688d224dc0c4e926d1db35aa0">Usuario::getEmail</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> email;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_usuario.html#a52d502676a951f13722e22af20c9cea7">  104</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a52d502676a951f13722e22af20c9cea7">Usuario::setSenha</a>(<span class="keyword">const</span> Senha &amp;senha){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    this-&gt;senha = senha;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_usuario.html#a8f78d3949b3a9492d0aa0a197860a972">  112</a></span>&#160;<span class="keyword">inline</span> Senha <a class="code" href="class_usuario.html#a8f78d3949b3a9492d0aa0a197860a972">Usuario::getSenha</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> senha;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_usuario.html#ac9f4c306206ff50fad72608edef155bd">  121</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_usuario.html#ac9f4c306206ff50fad72608edef155bd">Usuario::setTelefone</a>(<span class="keyword">const</span> Telefone &amp;telefone){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    this-&gt;telefone = telefone;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_usuario.html#aadad53ed0f557306c3966b2e94359729">  129</a></span>&#160;<span class="keyword">inline</span> Telefone <a class="code" href="class_usuario.html#aadad53ed0f557306c3966b2e94359729">Usuario::getTelefone</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> telefone;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="class_imovel.html">  136</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_imovel.html">Imovel</a>{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">//Domínio               //Nome domínio</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        CodigoImovel            codigoImovel;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        Classe                  classe;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        Descricao               descricao;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        Endereco                endereco;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        DataInicialImovel       dataInicialImovel;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        DataFinalImovel         dataFinalImovel;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        NumeroImovel            hospedesImovel;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        MoedaImovel             valorImovel;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">//Declaração dos métodos setters e getters</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">void</span> setCodigoImovel(<span class="keyword">const</span> CodigoImovel&amp;);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        CodigoImovel getCodigoImovel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordtype">void</span> setClasse(<span class="keyword">const</span> Classe&amp;);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        Classe getClasse() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordtype">void</span> setDescricao(<span class="keyword">const</span> Descricao&amp;);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        Descricao getDescricao() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordtype">void</span> setEndereco(<span class="keyword">const</span> Endereco&amp;);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        Endereco getEndereco() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordtype">void</span> setDataInicialImovel(<span class="keyword">const</span> DataInicialImovel&amp;);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        DataInicialImovel getDataInicialImovel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordtype">void</span> setDataFinalImovel(<span class="keyword">const</span> DataFinalImovel&amp;);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        DataFinalImovel getDataFinalImovel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordtype">void</span> setHospedesImovel(<span class="keyword">const</span> NumeroImovel&amp;);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        NumeroImovel getHospedesImovel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordtype">void</span> setValorImovel(<span class="keyword">const</span> MoedaImovel&amp;);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        MoedaImovel getValorImovel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;};</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="class_imovel.html#afb8fec701bff52a5ae48ad642b86c0e5">  243</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#afb8fec701bff52a5ae48ad642b86c0e5">Imovel::setCodigoImovel</a>(<span class="keyword">const</span> CodigoImovel &amp;codigoImovel){</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    this-&gt;codigoImovel = codigoImovel;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="class_imovel.html#a8c86aa1ed5a7d24581d16d8de7320beb">  251</a></span>&#160;<span class="keyword">inline</span> CodigoImovel <a class="code" href="class_imovel.html#a8c86aa1ed5a7d24581d16d8de7320beb">Imovel::getCodigoImovel</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> codigoImovel;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="class_imovel.html#a3268ae2b1122f65805e677b5adff1369">  260</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#a3268ae2b1122f65805e677b5adff1369">Imovel::setClasse</a>(<span class="keyword">const</span> Classe &amp;classe){</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    this-&gt;classe = classe;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_imovel.html#ad3b54a2ee3699fc02ad3040d5d567064">  268</a></span>&#160;<span class="keyword">inline</span> Classe <a class="code" href="class_imovel.html#ad3b54a2ee3699fc02ad3040d5d567064">Imovel::getClasse</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> classe;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="class_imovel.html#aa4b5d194b6f23ff97b1927f4a62e7bf9">  277</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#aa4b5d194b6f23ff97b1927f4a62e7bf9">Imovel::setDescricao</a>(<span class="keyword">const</span> Descricao &amp;descricao){</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    this-&gt;descricao = descricao;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="class_imovel.html#ad6c7ad5f6dc88f27dec3a197f3b038ec">  285</a></span>&#160;<span class="keyword">inline</span> Descricao <a class="code" href="class_imovel.html#ad6c7ad5f6dc88f27dec3a197f3b038ec">Imovel::getDescricao</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">return</span> descricao;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="class_imovel.html#ab0224fce8be217bd2c6bfcf1c92efe75">  294</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#ab0224fce8be217bd2c6bfcf1c92efe75">Imovel::setEndereco</a>(<span class="keyword">const</span> Endereco &amp;endereco){</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    this-&gt;endereco = endereco;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="class_imovel.html#afade6eb0a65fca0d68d26b4844e687b8">  302</a></span>&#160;<span class="keyword">inline</span> Endereco <a class="code" href="class_imovel.html#afade6eb0a65fca0d68d26b4844e687b8">Imovel::getEndereco</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> endereco;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="class_imovel.html#a6de4ae7710c3de6c9857656b338f29f7">  311</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#a6de4ae7710c3de6c9857656b338f29f7">Imovel::setDataInicialImovel</a>(<span class="keyword">const</span> DataInicialImovel &amp;dataInicialImovel){</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    this-&gt;dataInicialImovel = dataInicialImovel;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="class_imovel.html#abacea8bacc44efa71c2abbf3b0d5d0c4">  319</a></span>&#160;<span class="keyword">inline</span> DataInicialImovel <a class="code" href="class_imovel.html#abacea8bacc44efa71c2abbf3b0d5d0c4">Imovel::getDataInicialImovel</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">return</span> dataInicialImovel;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="class_imovel.html#a469a7936e413843d00ac616d0456cc74">  328</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#a469a7936e413843d00ac616d0456cc74">Imovel::setDataFinalImovel</a>(<span class="keyword">const</span> DataFinalImovel &amp;dataFinalImovel){</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    this-&gt;dataFinalImovel = dataFinalImovel;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="class_imovel.html#ace88e1a5e32a056a171157eb780b80a5">  336</a></span>&#160;<span class="keyword">inline</span> DataFinalImovel <a class="code" href="class_imovel.html#ace88e1a5e32a056a171157eb780b80a5">Imovel::getDataFinalImovel</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">return</span> dataFinalImovel;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="class_imovel.html#a3103acd289f9524ff2c7e05a3c4826fc">  344</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#a3103acd289f9524ff2c7e05a3c4826fc">Imovel::setHospedesImovel</a>(<span class="keyword">const</span> NumeroImovel &amp;hospedesImovel){</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    this-&gt;hospedesImovel = hospedesImovel;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="class_imovel.html#ac7e2dc54f745bb04ce8eb3824ae0f616">  352</a></span>&#160;<span class="keyword">inline</span> NumeroImovel <a class="code" href="class_imovel.html#ac7e2dc54f745bb04ce8eb3824ae0f616">Imovel::getHospedesImovel</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">return</span> hospedesImovel;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;}</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="class_imovel.html#a43ed33b589ea9efc7fddc12ea499202c">  361</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_imovel.html#a43ed33b589ea9efc7fddc12ea499202c">Imovel::setValorImovel</a>(<span class="keyword">const</span> MoedaImovel &amp;valorImovel){</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    this-&gt;valorImovel = valorImovel;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="class_imovel.html#a85306951aa0cea331b295fbcbd2192ae">  369</a></span>&#160;<span class="keyword">inline</span> MoedaImovel <a class="code" href="class_imovel.html#a85306951aa0cea331b295fbcbd2192ae">Imovel::getValorImovel</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">return</span> valorImovel;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="class_proposta.html">  376</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_proposta.html">Proposta</a>{</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        CodigoProposta              codigoProposta;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        DataInicialProposta         dataInicialProposta;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        DataFinalProposta           dataFinalProposta;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        NumeroProposta              hospedesProposta;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        MoedaProposta               valorProposta;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="comment">//Declaração dos métodos setters e getters</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordtype">void</span> setCodigoProposta(<span class="keyword">const</span> CodigoProposta&amp;);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        CodigoProposta getCodigoProposta() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordtype">void</span> setDataInicialProposta(<span class="keyword">const</span> DataInicialProposta&amp;);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        DataInicialProposta getDataInicialProposta() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keywordtype">void</span> setDataFinalProposta(<span class="keyword">const</span> DataFinalProposta&amp;);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        DataFinalProposta getDataFinalProposta() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keywordtype">void</span> setHospedesProposta(<span class="keyword">const</span> NumeroProposta&amp;);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        NumeroProposta getHospedesProposta() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordtype">void</span> setValorProposta(<span class="keyword">const</span> MoedaProposta&amp;);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        MoedaProposta getValorProposta() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;};</div>
+<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="class_proposta.html#a5572c2f83c3142382f17c48355150e0c">  445</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_proposta.html#a5572c2f83c3142382f17c48355150e0c">Proposta::setCodigoProposta</a>(<span class="keyword">const</span> CodigoProposta &amp;codigoProposta){</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    this-&gt;codigoProposta = codigoProposta;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="class_proposta.html#ae815948c77d147a6b584c9d3ee6327e1">  453</a></span>&#160;<span class="keyword">inline</span> CodigoProposta <a class="code" href="class_proposta.html#ae815948c77d147a6b584c9d3ee6327e1">Proposta::getCodigoProposta</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">return</span> codigoProposta;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;}</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
+<div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="class_proposta.html#a0940ba5aea9f3748a31daead43cba36a">  462</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_proposta.html#a0940ba5aea9f3748a31daead43cba36a">Proposta::setDataInicialProposta</a>(<span class="keyword">const</span> DataInicialProposta &amp;dataInicialProposta){</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    this-&gt;dataInicialProposta = dataInicialProposta;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
+<div class="line"><a name="l00470"></a><span class="lineno"><a class="line" href="class_proposta.html#a6df06ed1beff53c677aca150617ad74d">  470</a></span>&#160;<span class="keyword">inline</span> DataInicialProposta <a class="code" href="class_proposta.html#a6df06ed1beff53c677aca150617ad74d">Proposta::getDataInicialProposta</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordflow">return</span> dataInicialProposta;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;}</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
+<div class="line"><a name="l00479"></a><span class="lineno"><a class="line" href="class_proposta.html#a556cb48f0372e898f3ec8b1f383f21ac">  479</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_proposta.html#a556cb48f0372e898f3ec8b1f383f21ac">Proposta::setDataFinalProposta</a>(<span class="keyword">const</span> DataFinalProposta &amp;dataFinalProposta){</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    this-&gt;dataFinalProposta = dataFinalProposta;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;}</div>
+<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="class_proposta.html#a1d4bb6bcd35b6fd01664b2ef1889b9bd">  487</a></span>&#160;<span class="keyword">inline</span> DataFinalProposta <a class="code" href="class_proposta.html#a1d4bb6bcd35b6fd01664b2ef1889b9bd">Proposta::getDataFinalProposta</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keywordflow">return</span> dataFinalProposta;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;}</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00496"></a><span class="lineno"><a class="line" href="class_proposta.html#a2b9aa0b1331c45a3edc95c2c7446abbb">  496</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_proposta.html#a2b9aa0b1331c45a3edc95c2c7446abbb">Proposta::setHospedesProposta</a>(<span class="keyword">const</span> NumeroProposta &amp;hospedesProposta){</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    this-&gt;hospedesProposta = hospedesProposta;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;}</div>
+<div class="line"><a name="l00504"></a><span class="lineno"><a class="line" href="class_proposta.html#a8bab65e48fc5ae32fdf57255d86adc2f">  504</a></span>&#160;<span class="keyword">inline</span> NumeroProposta <a class="code" href="class_proposta.html#a8bab65e48fc5ae32fdf57255d86adc2f">Proposta::getHospedesProposta</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keywordflow">return</span> hospedesProposta;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;}</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="class_proposta.html#a98efb063980fde841939f0528ce58517">  513</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_proposta.html#a98efb063980fde841939f0528ce58517">Proposta::setValorProposta</a>(<span class="keyword">const</span> MoedaProposta &amp;valorProposta){</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    this-&gt;valorProposta = valorProposta;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;}</div>
+<div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="class_proposta.html#a4247497809545722c605ac865cd3178b">  521</a></span>&#160;<span class="keyword">inline</span> MoedaProposta <a class="code" href="class_proposta.html#a4247497809545722c605ac865cd3178b">Proposta::getValorProposta</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">return</span> valorProposta;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;}</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ENTIDADES_H</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
+<div class="ttc" id="aclass_imovel_html"><div class="ttname"><a href="class_imovel.html">Imovel</a></div><div class="ttdoc">Entidade para Usuário.</div><div class="ttdef"><b>Definition:</b> ent.h:136</div></div>
+<div class="ttc" id="aclass_imovel_html_a3103acd289f9524ff2c7e05a3c4826fc"><div class="ttname"><a href="class_imovel.html#a3103acd289f9524ff2c7e05a3c4826fc">Imovel::setHospedesImovel</a></div><div class="ttdeci">void setHospedesImovel(const NumeroImovel &amp;)</div><div class="ttdoc">Set para o atributo HospedesImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:344</div></div>
+<div class="ttc" id="aclass_imovel_html_a3268ae2b1122f65805e677b5adff1369"><div class="ttname"><a href="class_imovel.html#a3268ae2b1122f65805e677b5adff1369">Imovel::setClasse</a></div><div class="ttdeci">void setClasse(const Classe &amp;)</div><div class="ttdoc">Set para o atributo Classe.</div><div class="ttdef"><b>Definition:</b> ent.h:260</div></div>
+<div class="ttc" id="aclass_imovel_html_a43ed33b589ea9efc7fddc12ea499202c"><div class="ttname"><a href="class_imovel.html#a43ed33b589ea9efc7fddc12ea499202c">Imovel::setValorImovel</a></div><div class="ttdeci">void setValorImovel(const MoedaImovel &amp;)</div><div class="ttdoc">Set para o atributo ValorImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:361</div></div>
+<div class="ttc" id="aclass_imovel_html_a469a7936e413843d00ac616d0456cc74"><div class="ttname"><a href="class_imovel.html#a469a7936e413843d00ac616d0456cc74">Imovel::setDataFinalImovel</a></div><div class="ttdeci">void setDataFinalImovel(const DataFinalImovel &amp;)</div><div class="ttdoc">Set para o atributo DataFinalImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:328</div></div>
+<div class="ttc" id="aclass_imovel_html_a6de4ae7710c3de6c9857656b338f29f7"><div class="ttname"><a href="class_imovel.html#a6de4ae7710c3de6c9857656b338f29f7">Imovel::setDataInicialImovel</a></div><div class="ttdeci">void setDataInicialImovel(const DataInicialImovel &amp;)</div><div class="ttdoc">Set para o atributo DataInicialImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:311</div></div>
+<div class="ttc" id="aclass_imovel_html_a85306951aa0cea331b295fbcbd2192ae"><div class="ttname"><a href="class_imovel.html#a85306951aa0cea331b295fbcbd2192ae">Imovel::getValorImovel</a></div><div class="ttdeci">MoedaImovel getValorImovel() const</div><div class="ttdoc">Get para ValorImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:369</div></div>
+<div class="ttc" id="aclass_imovel_html_a8c86aa1ed5a7d24581d16d8de7320beb"><div class="ttname"><a href="class_imovel.html#a8c86aa1ed5a7d24581d16d8de7320beb">Imovel::getCodigoImovel</a></div><div class="ttdeci">CodigoImovel getCodigoImovel() const</div><div class="ttdoc">Get para CodigoImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:251</div></div>
+<div class="ttc" id="aclass_imovel_html_aa4b5d194b6f23ff97b1927f4a62e7bf9"><div class="ttname"><a href="class_imovel.html#aa4b5d194b6f23ff97b1927f4a62e7bf9">Imovel::setDescricao</a></div><div class="ttdeci">void setDescricao(const Descricao &amp;)</div><div class="ttdoc">Set para o atributo Descrição.</div><div class="ttdef"><b>Definition:</b> ent.h:277</div></div>
+<div class="ttc" id="aclass_imovel_html_ab0224fce8be217bd2c6bfcf1c92efe75"><div class="ttname"><a href="class_imovel.html#ab0224fce8be217bd2c6bfcf1c92efe75">Imovel::setEndereco</a></div><div class="ttdeci">void setEndereco(const Endereco &amp;)</div><div class="ttdoc">Set para o atributo Endereço.</div><div class="ttdef"><b>Definition:</b> ent.h:294</div></div>
+<div class="ttc" id="aclass_imovel_html_abacea8bacc44efa71c2abbf3b0d5d0c4"><div class="ttname"><a href="class_imovel.html#abacea8bacc44efa71c2abbf3b0d5d0c4">Imovel::getDataInicialImovel</a></div><div class="ttdeci">DataInicialImovel getDataInicialImovel() const</div><div class="ttdoc">Get para DataInicialImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:319</div></div>
+<div class="ttc" id="aclass_imovel_html_ac7e2dc54f745bb04ce8eb3824ae0f616"><div class="ttname"><a href="class_imovel.html#ac7e2dc54f745bb04ce8eb3824ae0f616">Imovel::getHospedesImovel</a></div><div class="ttdeci">NumeroImovel getHospedesImovel() const</div><div class="ttdoc">Get para HospedesImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:352</div></div>
+<div class="ttc" id="aclass_imovel_html_ace88e1a5e32a056a171157eb780b80a5"><div class="ttname"><a href="class_imovel.html#ace88e1a5e32a056a171157eb780b80a5">Imovel::getDataFinalImovel</a></div><div class="ttdeci">DataFinalImovel getDataFinalImovel() const</div><div class="ttdoc">Get para DataFinalImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:336</div></div>
+<div class="ttc" id="aclass_imovel_html_ad3b54a2ee3699fc02ad3040d5d567064"><div class="ttname"><a href="class_imovel.html#ad3b54a2ee3699fc02ad3040d5d567064">Imovel::getClasse</a></div><div class="ttdeci">Classe getClasse() const</div><div class="ttdoc">Get para Classe.</div><div class="ttdef"><b>Definition:</b> ent.h:268</div></div>
+<div class="ttc" id="aclass_imovel_html_ad6c7ad5f6dc88f27dec3a197f3b038ec"><div class="ttname"><a href="class_imovel.html#ad6c7ad5f6dc88f27dec3a197f3b038ec">Imovel::getDescricao</a></div><div class="ttdeci">Descricao getDescricao() const</div><div class="ttdoc">Get para Descrição.</div><div class="ttdef"><b>Definition:</b> ent.h:285</div></div>
+<div class="ttc" id="aclass_imovel_html_afade6eb0a65fca0d68d26b4844e687b8"><div class="ttname"><a href="class_imovel.html#afade6eb0a65fca0d68d26b4844e687b8">Imovel::getEndereco</a></div><div class="ttdeci">Endereco getEndereco() const</div><div class="ttdoc">Get para Endereço.</div><div class="ttdef"><b>Definition:</b> ent.h:302</div></div>
+<div class="ttc" id="aclass_imovel_html_afb8fec701bff52a5ae48ad642b86c0e5"><div class="ttname"><a href="class_imovel.html#afb8fec701bff52a5ae48ad642b86c0e5">Imovel::setCodigoImovel</a></div><div class="ttdeci">void setCodigoImovel(const CodigoImovel &amp;)</div><div class="ttdoc">Set para o atributo CodigoImovel.</div><div class="ttdef"><b>Definition:</b> ent.h:243</div></div>
+<div class="ttc" id="aclass_proposta_html"><div class="ttname"><a href="class_proposta.html">Proposta</a></div><div class="ttdoc">Entidade para Proposta.</div><div class="ttdef"><b>Definition:</b> ent.h:376</div></div>
+<div class="ttc" id="aclass_proposta_html_a0940ba5aea9f3748a31daead43cba36a"><div class="ttname"><a href="class_proposta.html#a0940ba5aea9f3748a31daead43cba36a">Proposta::setDataInicialProposta</a></div><div class="ttdeci">void setDataInicialProposta(const DataInicialProposta &amp;)</div><div class="ttdoc">Set para o atributo DataInicialProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:462</div></div>
+<div class="ttc" id="aclass_proposta_html_a1d4bb6bcd35b6fd01664b2ef1889b9bd"><div class="ttname"><a href="class_proposta.html#a1d4bb6bcd35b6fd01664b2ef1889b9bd">Proposta::getDataFinalProposta</a></div><div class="ttdeci">DataFinalProposta getDataFinalProposta() const</div><div class="ttdoc">Get para DataFinalProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:487</div></div>
+<div class="ttc" id="aclass_proposta_html_a2b9aa0b1331c45a3edc95c2c7446abbb"><div class="ttname"><a href="class_proposta.html#a2b9aa0b1331c45a3edc95c2c7446abbb">Proposta::setHospedesProposta</a></div><div class="ttdeci">void setHospedesProposta(const NumeroProposta &amp;)</div><div class="ttdoc">Set para o atributo HospedesProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:496</div></div>
+<div class="ttc" id="aclass_proposta_html_a4247497809545722c605ac865cd3178b"><div class="ttname"><a href="class_proposta.html#a4247497809545722c605ac865cd3178b">Proposta::getValorProposta</a></div><div class="ttdeci">MoedaProposta getValorProposta() const</div><div class="ttdoc">Get para ValorProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:521</div></div>
+<div class="ttc" id="aclass_proposta_html_a556cb48f0372e898f3ec8b1f383f21ac"><div class="ttname"><a href="class_proposta.html#a556cb48f0372e898f3ec8b1f383f21ac">Proposta::setDataFinalProposta</a></div><div class="ttdeci">void setDataFinalProposta(const DataFinalProposta &amp;)</div><div class="ttdoc">Set para o atributo DataFinalalProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:479</div></div>
+<div class="ttc" id="aclass_proposta_html_a5572c2f83c3142382f17c48355150e0c"><div class="ttname"><a href="class_proposta.html#a5572c2f83c3142382f17c48355150e0c">Proposta::setCodigoProposta</a></div><div class="ttdeci">void setCodigoProposta(const CodigoProposta &amp;)</div><div class="ttdoc">Set para o atributo CodigoProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:445</div></div>
+<div class="ttc" id="aclass_proposta_html_a6df06ed1beff53c677aca150617ad74d"><div class="ttname"><a href="class_proposta.html#a6df06ed1beff53c677aca150617ad74d">Proposta::getDataInicialProposta</a></div><div class="ttdeci">DataInicialProposta getDataInicialProposta() const</div><div class="ttdoc">Get para DataInicialProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:470</div></div>
+<div class="ttc" id="aclass_proposta_html_a8bab65e48fc5ae32fdf57255d86adc2f"><div class="ttname"><a href="class_proposta.html#a8bab65e48fc5ae32fdf57255d86adc2f">Proposta::getHospedesProposta</a></div><div class="ttdeci">NumeroProposta getHospedesProposta() const</div><div class="ttdoc">Get para HospedesProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:504</div></div>
+<div class="ttc" id="aclass_proposta_html_a98efb063980fde841939f0528ce58517"><div class="ttname"><a href="class_proposta.html#a98efb063980fde841939f0528ce58517">Proposta::setValorProposta</a></div><div class="ttdeci">void setValorProposta(const MoedaProposta &amp;)</div><div class="ttdoc">Set para o atributo ValorProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:513</div></div>
+<div class="ttc" id="aclass_proposta_html_ae815948c77d147a6b584c9d3ee6327e1"><div class="ttname"><a href="class_proposta.html#ae815948c77d147a6b584c9d3ee6327e1">Proposta::getCodigoProposta</a></div><div class="ttdeci">CodigoProposta getCodigoProposta() const</div><div class="ttdoc">Get para CodigoProposta.</div><div class="ttdef"><b>Definition:</b> ent.h:453</div></div>
+<div class="ttc" id="aclass_usuario_html"><div class="ttname"><a href="class_usuario.html">Usuario</a></div><div class="ttdoc">Entidade para Usuário.</div><div class="ttdef"><b>Definition:</b> ent.h:11</div></div>
+<div class="ttc" id="aclass_usuario_html_a0371bfcd38d47d092a66d1a7efd5a6b5"><div class="ttname"><a href="class_usuario.html#a0371bfcd38d47d092a66d1a7efd5a6b5">Usuario::setEmail</a></div><div class="ttdeci">void setEmail(const Email &amp;)</div><div class="ttdoc">Set para o atributo Email.</div><div class="ttdef"><b>Definition:</b> ent.h:87</div></div>
+<div class="ttc" id="aclass_usuario_html_a47a619f688d224dc0c4e926d1db35aa0"><div class="ttname"><a href="class_usuario.html#a47a619f688d224dc0c4e926d1db35aa0">Usuario::getEmail</a></div><div class="ttdeci">Email getEmail() const</div><div class="ttdoc">Get para Email.</div><div class="ttdef"><b>Definition:</b> ent.h:95</div></div>
+<div class="ttc" id="aclass_usuario_html_a52d502676a951f13722e22af20c9cea7"><div class="ttname"><a href="class_usuario.html#a52d502676a951f13722e22af20c9cea7">Usuario::setSenha</a></div><div class="ttdeci">void setSenha(const Senha &amp;)</div><div class="ttdoc">Set para o atributo Senha.</div><div class="ttdef"><b>Definition:</b> ent.h:104</div></div>
+<div class="ttc" id="aclass_usuario_html_a67580c333ab37fda94a3cb7c52121ef2"><div class="ttname"><a href="class_usuario.html#a67580c333ab37fda94a3cb7c52121ef2">Usuario::setNome</a></div><div class="ttdeci">void setNome(const Nome &amp;)</div><div class="ttdoc">Set para o atributo Nome.</div><div class="ttdef"><b>Definition:</b> ent.h:70</div></div>
+<div class="ttc" id="aclass_usuario_html_a712640c003aa66605846627f2c90db60"><div class="ttname"><a href="class_usuario.html#a712640c003aa66605846627f2c90db60">Usuario::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">Get para Nome.</div><div class="ttdef"><b>Definition:</b> ent.h:78</div></div>
+<div class="ttc" id="aclass_usuario_html_a8f78d3949b3a9492d0aa0a197860a972"><div class="ttname"><a href="class_usuario.html#a8f78d3949b3a9492d0aa0a197860a972">Usuario::getSenha</a></div><div class="ttdeci">Senha getSenha() const</div><div class="ttdoc">Get para Senha.</div><div class="ttdef"><b>Definition:</b> ent.h:112</div></div>
+<div class="ttc" id="aclass_usuario_html_aadad53ed0f557306c3966b2e94359729"><div class="ttname"><a href="class_usuario.html#aadad53ed0f557306c3966b2e94359729">Usuario::getTelefone</a></div><div class="ttdeci">Telefone getTelefone() const</div><div class="ttdoc">Get para Telefone.</div><div class="ttdef"><b>Definition:</b> ent.h:129</div></div>
+<div class="ttc" id="aclass_usuario_html_ac9f4c306206ff50fad72608edef155bd"><div class="ttname"><a href="class_usuario.html#ac9f4c306206ff50fad72608edef155bd">Usuario::setTelefone</a></div><div class="ttdeci">void setTelefone(const Telefone &amp;)</div><div class="ttdoc">Set para o atributo Telefone.</div><div class="ttdef"><b>Definition:</b> ent.h:121</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
