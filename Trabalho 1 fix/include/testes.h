@@ -276,4 +276,41 @@ class TUDataFinalProposta{
         const static int FALHA   = -1;
         int run();
 };
+
+class TUNumeroProposta{
+    private:
+        const static int VALOR_VALIDO   = 19;
+        const static int VALOR_INVALIDO = 21;
+        NumeroProposta *hospedesProposta;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
+class TUMoedaProposta{
+    private:
+        double VALOR_VALIDO   = 85.00;
+        double VALOR_INVALIDO = 0;
+        MoedaProposta *valorProposta;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
 #endif // TESTES_H_INCLUDED

@@ -232,4 +232,36 @@ class DataFinalProposta{
             return dataFinalProposta;
         }
 };
+
+class NumeroProposta{
+    private:
+        int hospedesProposta;
+        const static int LIMITEMAXIMO = 20;
+        const static int LIMITEMINIMO = 0;
+
+        void validar(int);
+
+    public:
+        void setHospedesProposta(int);
+
+        int getHospedesProposta() const{
+            return hospedesProposta;
+        }
+};
+
+class MoedaProposta{
+    private:
+        double valorProposta;
+        double LIMITEMAXIMO = 1000000.00;
+        double LIMITEMINIMO = 1;
+
+        void validar(double);
+
+    public:
+        void setValorProposta(double);
+
+        double getValorProposta() const{
+            return valorProposta;
+        }
+};
 #endif

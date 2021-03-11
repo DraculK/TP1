@@ -63,6 +63,8 @@ class TUProposta {
         string VALOR_VALIDO_CODIGOPROPOSTA = "22222";
         const static int VALOR_VALIDO_DATAINICIALPROPOSTA = 210827;
         const static int VALOR_VALIDO_DATAFINALPROPOSTA = 200730;
+        const static int VALOR_VALIDO_NUMEROPROPOSTA = 19;
+        double VALOR_VALIDO_MOEDAPROPOSTA = 85.00;
 
         Proposta *entidade;
         int estado;
@@ -72,6 +74,8 @@ class TUProposta {
         void testarCenarioCodigoProposta();
         void testarCenarioDataInicialProposta();
         void testarCenarioDataFinalProposta();
+        void testarCenarioNumeroProposta();
+        void testarCenarioMoedaProposta();
     public:
         const static int SUCESSO = 0;
         const static int FALHA = -1;

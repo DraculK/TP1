@@ -541,3 +541,75 @@ int TUDataFinalProposta::run(){
     tearDown();
     return estado;
 }
+
+void TUNumeroProposta::setUp(){
+    hospedesProposta = new NumeroProposta();
+    estado = SUCESSO;
+}
+void TUNumeroProposta::tearDown(){
+    delete hospedesProposta;
+}
+void TUNumeroProposta::testarCenarioSucesso(){
+    try{
+        hospedesProposta->setHospedesProposta(VALOR_VALIDO);
+        if (hospedesProposta->getHospedesProposta() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUNumeroProposta::testarCenarioFalha(){
+    try{
+        hospedesProposta->setHospedesProposta(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (hospedesProposta->getHospedesProposta() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUNumeroProposta::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+void TUMoedaProposta::setUp(){
+    valorProposta = new MoedaProposta();
+    estado = SUCESSO;
+}
+void TUMoedaProposta::tearDown(){
+    delete valorProposta;
+}
+void TUMoedaProposta::testarCenarioSucesso(){
+    try{
+        valorProposta->setValorProposta(VALOR_VALIDO);
+        if (valorProposta->getValorProposta() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUMoedaProposta::testarCenarioFalha(){
+    try{
+        valorProposta->setValorProposta(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (valorProposta->getValorProposta() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUMoedaProposta::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}

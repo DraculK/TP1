@@ -166,6 +166,8 @@ class Proposta{
         CodigoProposta          codigoProposta;
         DataInicialProposta     dataInicialProposta;
         DataFinalProposta       dataFinalProposta;
+        NumeroProposta          hospedesProposta;
+        MoedaProposta           valorProposta;
     public:
     void setCodigoProposta(const CodigoProposta&);
     CodigoProposta getCodigoProposta() const;
@@ -175,6 +177,12 @@ class Proposta{
 
     void setDataFinalProposta(const DataFinalProposta&);
     DataFinalProposta getDataFinalProposta() const;
+
+    void setHospedesProposta(const NumeroProposta&);
+    NumeroProposta getHospedesProposta() const;
+
+    void setValorProposta(const MoedaProposta&);
+    MoedaProposta getValorProposta() const;
 };
 
 inline void Proposta::setCodigoProposta(const CodigoProposta &codigoProposta){
@@ -200,4 +208,21 @@ inline void Proposta::setDataFinalProposta(const DataFinalProposta &dataFinalPro
 inline DataFinalProposta Proposta::getDataFinalProposta() const{
     return dataFinalProposta;
 }
+
+inline void Proposta::setHospedesProposta(const NumeroProposta &hospedesProposta){
+    this->hospedesProposta = hospedesProposta;
+}
+
+inline NumeroProposta Proposta::getHospedesProposta() const{
+    return hospedesProposta;
+}
+
+inline void Proposta::setValorProposta(const MoedaProposta &valorProposta){
+    this->valorProposta = valorProposta;
+}
+
+inline MoedaProposta Proposta::getValorProposta() const{
+    return valorProposta;
+}
+
 #endif // ENTIDADES_H

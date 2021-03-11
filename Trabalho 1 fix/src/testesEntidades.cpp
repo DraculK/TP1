@@ -172,6 +172,23 @@ void TUProposta::testarCenarioDataFinalProposta(){
         estado = FALHA;
 }
 
+void TUProposta::testarCenarioNumeroProposta(){
+    NumeroProposta valor;
+    valor.setHospedesProposta(VALOR_VALIDO_NUMEROPROPOSTA);
+    entidade->setHospedesProposta(valor);
+    if (entidade->getHospedesProposta().getHospedesProposta() != VALOR_VALIDO_NUMEROPROPOSTA)
+        estado = FALHA;
+}
+
+void TUProposta::testarCenarioMoedaProposta(){
+    MoedaProposta valor;
+    valor.setValorProposta(VALOR_VALIDO_MOEDAPROPOSTA);
+    entidade->setValorProposta(valor);
+    if (entidade->getValorProposta().getValorProposta() != VALOR_VALIDO_MOEDAPROPOSTA)
+        estado = FALHA;
+}
+
+
 void TUProposta::tearDown(){
     delete entidade;
 }
@@ -181,6 +198,8 @@ int TUProposta::run(){
   testarCenarioCodigoProposta();
   testarCenarioDataInicialProposta();
   testarCenarioDataFinalProposta();
+  testarCenarioNumeroProposta();
+  testarCenarioMoedaProposta();
   tearDown();
   return estado;
 }

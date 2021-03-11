@@ -145,3 +145,21 @@ void DataFinalProposta::setDataFinalProposta(int dataFinalProposta){
     validar(dataFinalProposta);
     this->dataFinalProposta = dataFinalProposta;
 }
+
+void NumeroProposta::validar(int hospedesProposta){
+    if (hospedesProposta > LIMITEMAXIMO || hospedesProposta < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void NumeroProposta::setHospedesProposta(int hospedesProposta){
+    validar(hospedesProposta);
+    this->hospedesProposta = hospedesProposta;
+}
+
+void MoedaProposta::validar(double valorProposta){
+    if (valorProposta > LIMITEMAXIMO || valorProposta < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void MoedaProposta::setValorProposta(double valorProposta){
+    validar(valorProposta);
+    this->valorProposta = valorProposta;
+}

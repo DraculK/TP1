@@ -151,6 +151,22 @@ int main()
         case TUDataFinalProposta::FALHA  : cout << "FALHA - DATA FINAL PROPOSTA \n";
             break;
     }
+
+    TUNumeroProposta testeNumeroProposta;
+    switch(testeNumeroProposta.run()){
+        case TUNumeroProposta::SUCESSO: cout << "SUCESSO - HOSPEDES PROPOSTA \n";
+            break;
+        case TUNumeroProposta::FALHA  : cout << "FALHA - HOSPEDES PROPOSTA \n";
+            break;
+    }
+
+    TUMoedaProposta testeMoedaProposta;
+    switch(testeMoedaProposta.run()){
+        case TUMoedaProposta::SUCESSO: cout << "SUCESSO - VALOR PROPOSTA \n";
+            break;
+        case TUMoedaProposta::FALHA  : cout << "FALHA - VALOR PROPOSTA \n";
+            break;
+    }
     system("pause");
     return 0;
 }
