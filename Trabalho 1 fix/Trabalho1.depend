@@ -131,3 +131,69 @@
 1615031607 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\testesentidades.cpp
 	"testesEntidades.h"
 
+1615492192 source:c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\main.cpp
+	<iostream>
+	"dominios.h"
+	"testes.h"
+	"entidades.h"
+	"testesEntidades.h"
+
+1615490971 c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\include\dominios.h
+	<stdexcept>
+
+1615491019 c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\include\testes.h
+	"dominios.h"
+
+1615491821 c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\include\entidades.h
+	"dominios.h"
+
+1615491455 c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\include\testesentidades.h
+	"dominios.h"
+	"entidades.h"
+
+1615490970 source:c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\src\dominios.cpp
+	"dominios.h"
+	<iostream>
+
+1615032786 source:c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\src\entidades.cpp
+	"entidades.h"
+
+1615491180 source:c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\src\testes.cpp
+	"testes.h"
+
+1615491757 source:c:\users\maciota\desktop\11119\tp1-main\trabalho 1 fix\src\testesentidades.cpp
+	"testesEntidades.h"
+
+1615494259 source:c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\main.cpp
+	<iostream>
+	"dominios.h"
+	"testes.h"
+	"entidades.h"
+	"testesEntidades.h"
+
+1615493615 c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\include\dominios.h
+	<stdexcept>
+
+1615494307 c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\include\testes.h
+	"dominios.h"
+
+1615494165 c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\include\entidades.h
+	"dominios.h"
+
+1615494307 c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\include\testesentidades.h
+	"dominios.h"
+	"entidades.h"
+
+1615493694 source:c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\src\dominios.cpp
+	"dominios.h"
+	<iostream>
+
+1615032786 source:c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\src\entidades.cpp
+	"entidades.h"
+
+1615494271 source:c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\src\testes.cpp
+	"testes.h"
+
+1615494046 source:c:\users\maciota\desktop\2235\tp1-main\trabalho 1 fix\src\testesentidades.cpp
+	"testesEntidades.h"
+

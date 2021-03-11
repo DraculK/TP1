@@ -56,4 +56,25 @@ class TUImovel {
         const static int FALHA = -1;
         int run();
 };
+
+//PROPOSTA
+class TUProposta {
+    private:
+        string VALOR_VALIDO_CODIGOPROPOSTA = "22222";
+        const static int VALOR_VALIDO_DATAINICIALPROPOSTA = 210827;
+        const static int VALOR_VALIDO_DATAFINALPROPOSTA = 200730;
+
+        Proposta *entidade;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioCodigoProposta();
+        void testarCenarioDataInicialProposta();
+        void testarCenarioDataFinalProposta();
+    public:
+        const static int SUCESSO = 0;
+        const static int FALHA = -1;
+        int run();
+};
 #endif // TESTESENTIDADES_H_INCLUDED

@@ -186,4 +186,50 @@ class MoedaImovel{
             return valorImovel;
         }
 };
+
+//PROPOSTA
+class CodigoProposta{
+    private:
+        string codigoProposta;
+        string LIMITEMINIMO="00000";
+        const static int LIMITEMAXIMO=5;
+        void validar(string);
+
+    public:
+        void setCodigoProposta(string);
+
+        string getCodigoProposta() const{
+            return codigoProposta;
+        }
+};
+
+class DataInicialProposta{
+    private:
+        int dataInicialProposta;
+        const static int LIMITEMAXIMO = 311299;
+        const static int LIMITEMINIMO = 010121;
+        void validar(int);
+
+    public:
+        void setDataInicialProposta(int);
+
+        int getDataInicialProposta() const {
+            return dataInicialProposta;
+        }
+};
+
+class DataFinalProposta{
+    private:
+        int dataFinalProposta;
+        const static int LIMITEMAXIMO = 311299;
+        const static int LIMITEMINIMO = 010121;
+        void validar(int);
+
+    public:
+        void setDataFinalProposta(int);
+
+        int getDataFinalProposta() const {
+            return dataFinalProposta;
+        }
+};
 #endif

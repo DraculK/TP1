@@ -116,3 +116,32 @@ void MoedaImovel::setValorImovel(double valorImovel){
     validar(valorImovel);
     this->valorImovel = valorImovel;
 }
+
+//PROPOSTA
+void CodigoProposta::validar(string codigoProposta){
+    int codigoPropostaPermitido = codigoProposta.size();
+    if (codigoPropostaPermitido > LIMITEMAXIMO || codigoProposta==LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void CodigoProposta::setCodigoProposta(string codigoProposta){
+    validar(codigoProposta);
+    this->codigoProposta = codigoProposta;
+}
+
+void DataInicialProposta::validar(int dataInicialProposta){
+    if (dataInicialProposta > LIMITEMAXIMO || dataInicialProposta < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void DataInicialProposta::setDataInicialProposta(int dataInicialProposta){
+    validar(dataInicialProposta);
+    this->dataInicialProposta = dataInicialProposta;
+}
+
+void DataFinalProposta::validar(int dataFinalProposta){
+    if (dataFinalProposta > LIMITEMAXIMO || dataFinalProposta < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void DataFinalProposta::setDataFinalProposta(int dataFinalProposta){
+    validar(dataFinalProposta);
+    this->dataFinalProposta = dataFinalProposta;
+}

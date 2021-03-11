@@ -432,3 +432,112 @@ int TUMoedaImovel::run(){
     tearDown();
     return estado;
 }
+
+//Proposta***********************
+void TUCodigoProposta::setUp(){
+    codigoProposta = new CodigoProposta();
+    estado = SUCESSO;
+}
+void TUCodigoProposta::tearDown(){
+    delete codigoProposta;
+}
+void TUCodigoProposta::testarCenarioSucesso(){
+    try{
+        codigoProposta->setCodigoProposta(VALOR_VALIDO);
+        if (codigoProposta->getCodigoProposta() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUCodigoProposta::testarCenarioFalha(){
+    try{
+        codigoProposta->setCodigoProposta(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (codigoProposta->getCodigoProposta() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUCodigoProposta::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+void TUDataInicialProposta::setUp(){
+    dataInicialProposta = new DataInicialProposta();
+    estado = SUCESSO;
+}
+void TUDataInicialProposta::tearDown(){
+    delete dataInicialProposta;
+}
+void TUDataInicialProposta::testarCenarioSucesso(){
+    try{
+        dataInicialProposta->setDataInicialProposta(VALOR_VALIDO);
+        if (dataInicialProposta->getDataInicialProposta() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUDataInicialProposta::testarCenarioFalha(){
+    try{
+        dataInicialProposta->setDataInicialProposta(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (dataInicialProposta->getDataInicialProposta() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUDataInicialProposta::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+void TUDataFinalProposta::setUp(){
+    dataFinalProposta = new DataFinalProposta();
+    estado = SUCESSO;
+}
+void TUDataFinalProposta::tearDown(){
+    delete dataFinalProposta;
+}
+void TUDataFinalProposta::testarCenarioSucesso(){
+    try{
+        dataFinalProposta->setDataFinalProposta(VALOR_VALIDO);
+        if (dataFinalProposta->getDataFinalProposta() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUDataFinalProposta::testarCenarioFalha(){
+    try{
+        dataFinalProposta->setDataFinalProposta(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (dataFinalProposta->getDataFinalProposta() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUDataFinalProposta::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}

@@ -158,4 +158,46 @@ inline void Imovel::setValorImovel(const MoedaImovel &valorImovel){
 inline MoedaImovel Imovel::getValorImovel() const{
     return valorImovel;
 }
+
+//PROPOSTA
+class Proposta{
+    private:
+        //Domínio               //Nome domínio
+        CodigoProposta          codigoProposta;
+        DataInicialProposta     dataInicialProposta;
+        DataFinalProposta       dataFinalProposta;
+    public:
+    void setCodigoProposta(const CodigoProposta&);
+    CodigoProposta getCodigoProposta() const;
+
+    void setDataInicialProposta(const DataInicialProposta&);
+    DataInicialProposta getDataInicialProposta() const;
+
+    void setDataFinalProposta(const DataFinalProposta&);
+    DataFinalProposta getDataFinalProposta() const;
+};
+
+inline void Proposta::setCodigoProposta(const CodigoProposta &codigoProposta){
+    this->codigoProposta = codigoProposta;
+}
+
+inline CodigoProposta Proposta::getCodigoProposta() const{
+    return codigoProposta;
+}
+
+inline void Proposta::setDataInicialProposta(const DataInicialProposta &dataInicialProposta){
+    this->dataInicialProposta = dataInicialProposta;
+}
+
+inline DataInicialProposta Proposta::getDataInicialProposta() const{
+    return dataInicialProposta;
+}
+
+inline void Proposta::setDataFinalProposta(const DataFinalProposta &dataFinalProposta){
+    this->dataFinalProposta = dataFinalProposta;
+}
+
+inline DataFinalProposta Proposta::getDataFinalProposta() const{
+    return dataFinalProposta;
+}
 #endif // ENTIDADES_H

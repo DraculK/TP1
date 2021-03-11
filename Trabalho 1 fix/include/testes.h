@@ -221,4 +221,59 @@ class TUMoedaImovel{
         const static int FALHA   = -1;
         int run();
 };
+
+//PROPOSTA
+class TUCodigoProposta{
+    private:
+        string VALOR_VALIDO   = "22222";
+        string VALOR_INVALIDO = "00000";
+        CodigoProposta *codigoProposta;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
+class TUDataInicialProposta{
+    private:
+        int VALOR_VALIDO   = 210827;
+        int VALOR_INVALIDO = 999999;
+        DataInicialProposta *dataInicialProposta;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
+class TUDataFinalProposta{
+    private:
+        int VALOR_VALIDO   = 200730;
+        int VALOR_INVALIDO = 999999;
+        DataFinalProposta *dataFinalProposta;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
 #endif // TESTES_H_INCLUDED

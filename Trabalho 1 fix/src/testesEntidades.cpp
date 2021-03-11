@@ -141,3 +141,46 @@ int TUImovel::run(){
   tearDown();
   return estado;
 }
+
+//PROPOSTA
+void TUProposta::setUp(){
+    entidade = new Proposta();
+    estado = SUCESSO;
+}
+
+void TUProposta::testarCenarioCodigoProposta(){
+    CodigoProposta valor;
+    valor.setCodigoProposta(VALOR_VALIDO_CODIGOPROPOSTA);
+    entidade->setCodigoProposta(valor);
+    if (entidade->getCodigoProposta().getCodigoProposta() != VALOR_VALIDO_CODIGOPROPOSTA)
+        estado = FALHA;
+}
+
+void TUProposta::testarCenarioDataInicialProposta(){
+    DataInicialProposta valor;
+    valor.setDataInicialProposta(VALOR_VALIDO_DATAINICIALPROPOSTA);
+    entidade->setDataInicialProposta(valor);
+    if (entidade->getDataInicialProposta().getDataInicialProposta() != VALOR_VALIDO_DATAINICIALPROPOSTA)
+        estado = FALHA;
+}
+
+void TUProposta::testarCenarioDataFinalProposta(){
+    DataFinalProposta valor;
+    valor.setDataFinalProposta(VALOR_VALIDO_DATAFINALPROPOSTA);
+    entidade->setDataFinalProposta(valor);
+    if (entidade->getDataFinalProposta().getDataFinalProposta() != VALOR_VALIDO_DATAFINALPROPOSTA)
+        estado = FALHA;
+}
+
+void TUProposta::tearDown(){
+    delete entidade;
+}
+
+int TUProposta::run(){
+  setUp();
+  testarCenarioCodigoProposta();
+  testarCenarioDataInicialProposta();
+  testarCenarioDataFinalProposta();
+  tearDown();
+  return estado;
+}

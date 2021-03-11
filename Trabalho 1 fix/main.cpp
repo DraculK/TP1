@@ -119,6 +119,38 @@ int main()
         case TUMoedaImovel::FALHA  : cout << "FALHA - VALOR IMOVEL \n";
             break;
     }
+
+    //PROPOSTA
+    TUProposta testeProposta;
+    switch(testeProposta.run()){
+        case TUProposta::SUCESSO : cout << "SUCESSO - PROPOSTA" << endl;
+            break;
+        case TUProposta::FALHA : cout << "FALHA - PROPOSTA" << endl;
+            break;
+    }
+    TUCodigoProposta testeCodigoProposta;
+    switch(testeCodigoProposta.run()){
+        case TUCodigoProposta::SUCESSO: cout << "SUCESSO - CODIGO PROPOSTA \n";
+            break;
+        case TUCodigoProposta::FALHA  : cout << "FALHA - CODIGO PROPOSTA \n";
+            break;
+    }
+
+    TUDataInicialProposta testeDataInicialProposta;
+    switch(testeDataInicialProposta.run()){
+        case TUDataInicialProposta::SUCESSO: cout << "SUCESSO - DATA INICIAL PROPOSTA \n";
+            break;
+        case TUDataInicialProposta::FALHA  : cout << "FALHA - DATA INICIAL PROPOSTA \n";
+            break;
+    }
+
+    TUDataFinalProposta testeDataFinalProposta;
+    switch(testeDataFinalProposta.run()){
+        case TUDataFinalProposta::SUCESSO: cout << "SUCESSO - DATA FINAL PROPOSTA \n";
+            break;
+        case TUDataFinalProposta::FALHA  : cout << "FALHA - DATA FINAL PROPOSTA \n";
+            break;
+    }
     system("pause");
     return 0;
 }
